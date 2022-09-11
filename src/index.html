@@ -1,23 +1,372 @@
 <!DOCTYPE html>
 <html lang="ru">
+  @@include('./blocks/main/_head.html', { "title": "Главная", })
 
-@@include('./blocks/main/_head.html', {
-"title": "Главная",
-})
+  <body>
+    <main class="main">
+      <!-- sidebar
+    ======================================================= -->
+      <section class="sidebar shadow">
+        <div class="sidebar__box">
+          <div class="sidebar__header">
+            <img
+              class="users__item-avatar avatar shadow sh-hover"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="sidebar__header-controls">
+              <button class="add control">+</button>
+              <svg class="settings" width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#settings" />
+              </svg>
+            </div>
+          </div>
 
-<body>
+          <div class="sidebar__search">
+            <input class="shadow sh-hover" type="text" placeholder="Поиск..." />
+            <svg class="search" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#search" />
+            </svg>
+            <svg class="close" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#close" />
+            </svg>
+          </div>
+        </div>
 
-    @@include('./blocks/main/_header.html')
+        <ul class="users__list">
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover active">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+          <li class="users__list-item shadow sh-hover">
+            <img
+              class="users__item-avatar avatar shadow"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="user__info">
+              <h6 class="users__item-name user-name">Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир</p>
+            </div>
+            <div class="users__item-date">Вчера</div>
+          </li>
+        </ul>
+      </section>
+      <!-- sidebar end -->
 
+      <!-- chat
+    ======================================================= -->
+      <section class="chat">
+        <div class="container">
+          <div class="chat__inner">
+            <div class="chat__header shadow">
+              <div class="chat__user">
+                <img
+                  src="./img/avatar.svg"
+                  alt="avatar"
+                  class="chat__user-avatar avatar shadow"
+                />
+                <div class="chat__user-info">
+                  <h6 class="chat__user-name user-name">Дмитрий</h6>
+                  <div class="chat__user-date">
+                    Последний раз был в сети в 20:00
+                  </div>
+                </div>
+              </div>
+              <div class="chat__controlls">
+                <div class="search__message">
+                  <input type="text" />
+                  <svg class="search control" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#search" />
+                  </svg>
+                </div>
+                <svg class="controlls control" width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#controlls" />
+                </svg>
+              </div>
+            </div>
 
-    @@include('./blocks/main/_footer.html')
+            <div class="chat__messages">
+              <div class="messages his">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">
+                      если что есть много вариантов на пиратке, особенно
+                      выживалок
+                    </p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
 
-    
+              <div class="messages">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Как дела?</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">
+                      если что есть много вариантов на пиратке, особенно
+                      выживалок
+                    </p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="messages his">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">
+                      если что есть много вариантов на пиратке, особенно
+                      выживалок
+                    </p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="messages">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="messages__date">Сегодня</div>
+
+              <div class="messages his">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">
+                      если что есть много вариантов на пиратке, особенно
+                      выживалок
+                    </p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="messages">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow img">
+                    <img
+                      src="./img/test.jpg"
+                      alt="image"
+                      class="message__img"
+                    />
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="messages his">
+                <div class="message__wrapper">
+                  <div class="message shadow">
+                    <p class="message__text">Привет</p>
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+                <div class="message__wrapper">
+                  <div class="message shadow img">
+                    <img
+                      src="./img/test.jpg"
+                      alt="image"
+                      class="message__img"
+                    />
+                    <div class="message__date">20:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat__compose shadow">
+              <svg class="smiles control" width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#smiles" />
+              </svg>
+              <div class="compose__input">
+                <input
+                  class="shadow sh-hover"
+                  type="text"
+                  placeholder="Сообщение..."
+                />
+                <svg class="submit" width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#submit" />
+                </svg>
+              </div>
+              <svg
+                class="attach control"
+                title="Прикрепить картинку"
+                width="20"
+                height="20"
+              >
+                <use xlink:href="./img/icons/icons.svg#attach" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- chat end -->
+    </main>
 
     <!-- Scripts -->
     @@include('./blocks/main/_js.html')
-
-</body>
-
+  </body>
 </html>
