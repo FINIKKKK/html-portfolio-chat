@@ -9,154 +9,188 @@
       <!-- sidebar
       ======================================================= -->
       <section class="sidebar shadow">
-        <div class="sidebar__box">
-          <div class="sidebar__header">
+        <div class="sidebar__personal shadow">
+          <svg class="sidebar__personal-back control" width="20" height="20">
+            <use xlink:href="./img/icons/icons.svg#back" />
+          </svg>
+
+          <div class="sidebar__personal-avatar">
             <img
-              class="users__item-avatar avatar shadow sh-hover"
+              class="avatar shadow"
               src="./img/avatar.svg"
+              width=""
+              height=""
               alt="avatar"
             />
-            <div class="sidebar__header-controls">
-              <button class="add control">+</button>
-              <svg class="settings" width="20" height="20">
-                <use xlink:href="./img/icons/icons.svg#settings" />
-              </svg>
-            </div>
-          </div>
-
-          <div class="sidebar__search">
-            <input class="shadow sh-hover" type="text" placeholder="Поиск..." />
-            <svg class="search" width="20" height="20">
-              <use xlink:href="./img/icons/icons.svg#search" />
+            <svg class="edit" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#edit" />
             </svg>
+          </div>
+          <div class="sidebar__personal-input input">
+            <label for="">Ваше имя:</label>
+            <input class="shadow sh-hover" type="text" value="Дмитрий" />
             <svg class="close" width="20" height="20">
               <use xlink:href="./img/icons/icons.svg#close" />
             </svg>
           </div>
+          <button class="sidebar__personal-save btn shadow sh-hover">
+            Сохранить
+          </button>
         </div>
+        <div class="sidebar__inner">
+          <div class="sidebar__box">
+            <div class="sidebar__header">
+              <img
+                class="users__item-avatar avatar shadow sh-hover"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="sidebar__header-controls">
+                <button class="add control">+</button>
+                <svg class="settings" width="20" height="20">
+                  <use xlink:href="./img/icons/icons.svg#settings" />
+                </svg>
+              </div>
+            </div>
 
-        <ul class="users__list">
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
+            <div class="sidebar__search">
+              <input
+                class="shadow sh-hover"
+                type="text"
+                placeholder="Поиск..."
+              />
+              <svg class="search" width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#search" />
+              </svg>
+              <svg class="close" width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#close" />
+              </svg>
             </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover active">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-          <li class="users__list-item shadow sh-hover">
-            <img
-              class="users__item-avatar avatar shadow"
-              src="./img/avatar.svg"
-              alt="avatar"
-            />
-            <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
-            </div>
-            <div class="users__item-date">Вчера</div>
-          </li>
-        </ul>
+          </div>
+
+          <ul class="users__list">
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover active">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+                <p class="users__item-message user-text">Привет мир</p>
+              </div>
+              <div class="users__item-date">Вчера</div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- sidebar end -->
 

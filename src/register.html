@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./blocks/main/_head.html', { "title": "Главная", })
+
+  <body>
+    <!-- preloader
+    ======================================================= -->
+    <section class="register">
+      <img src="./img/logo.svg" alt="logo" class="register__logo" />
+      <div class="register__inputs">
+        <div class="register__input shadow input sh-hover">
+          <input type="text" placeholder="Имя" />
+          <svg class="close" width="20" height="20">
+            <use xlink:href="./img/icons/icons.svg#close" />
+          </svg>
+        </div>
+        <div class="register__input shadow input sh-hover">
+          <input type="text" placeholder="Email" />
+          <svg class="close" width="20" height="20">
+            <use xlink:href="./img/icons/icons.svg#close" />
+          </svg>
+        </div>
+        <div class="register__input shadow input sh-hover">
+          <input type="text" placeholder="Пароль" />
+          <svg class="close" width="20" height="20">
+            <use xlink:href="./img/icons/icons.svg#close" />
+          </svg>
+        </div>
+      </div>
+      <button class="register__btn shadow btn sh-hover">Регистрация</button>
+      <div class="register__pretext">
+        Уже есть аккаунт? <a href="login.html">Войдите</a>
+      </div>
+    </section>
+    <!-- preloader end -->
+
+    <!-- Scripts -->
+    @@include('./blocks/main/_js.html')
+  </body>
+</html>
