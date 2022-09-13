@@ -118,14 +118,30 @@
   height: 100%;
 }
 
+.bg {
+  background-image: url("../img/bg.png");
+  background-repeat: repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
 .chat {
+  position: relative;
   width: 70%;
   height: 80%;
-  top: 13%;
   overflow: auto;
+  top: 13%;
+  position: relative;
 }
 
 .chat__header {
+  &.disabled {
+    transform: translateY(-150%);
+  }
+  transition: 0.5s ease-in-out;
   position: fixed;
   top: 0;
   right: 0;
@@ -184,6 +200,10 @@
 }
 
 .chat__compose {
+  &.disabled {
+    transform: translateY(150%);
+  }
+  transition: 0.5s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,10 +250,13 @@
 
 .chat__messages {
   position: relative;
-  overflow: auto;
+  overflow: scroll;
   width: 100%;
-  max-height: 100%;
+  min-height: 100%;
   padding: 35px 30px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   .messages__date {
     font-size: 14px;
     line-height: 16px;
@@ -243,11 +266,23 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+  .message__text {
+    word-wrap: break-word;
+  }
 }
 
 .messages {
-  position: relative;
+  // display: flex;
+  // display: block;
+  // margin-top: auto;
+  // position: relative;
   margin-bottom: 25px;
+  .message__wrapper {
+    // margin-top: auto;
+  }
+  .message {
+    // margin-top: auto;
+  }
   .message__wrapper:last-child {
     .message {
       position: relative;
@@ -327,5 +362,29 @@
   }
   .message {
     text-align: left;
+  }
+}
+
+.empty__list {
+  text-align: center;
+  padding: 50px 0;
+  .empty__list-img {
+    width: 90%;
+  }
+  .empty__list-title {
+    margin-top: -25px;
+    padding: 0 30px;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .empty__list-text {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 26px;
+    width: 90%;
+    margin: 0 auto;
+    opacity: 0.7;
   }
 }
