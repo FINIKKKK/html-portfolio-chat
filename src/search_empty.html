@@ -24,7 +24,11 @@
           </div>
 
           <div class="sidebar__search">
-            <input class="shadow sh-hover" type="text" placeholder="Поиск пользователей..." />
+            <input
+              class="shadow sh-hover"
+              type="text"
+              placeholder="Поиск пользователей..."
+            />
             <svg class="search" width="20" height="20">
               <use xlink:href="./img/icons/icons.svg#search" />
             </svg>
@@ -34,8 +38,8 @@
           </div>
         </div>
 
-        <!-- <div class="users__content">
-          <ul class="users__list">
+        <div class="users__content">
+          <!-- <ul class="users__list">
             <li class="users__list-item shadow sh-hover">
               <img
                 class="users__item-avatar avatar shadow"
@@ -56,19 +60,21 @@
                 <h6 class="users__item-name user-name">Дмитрий</h6>
               </div>
             </li>
-          </ul>
-        </div> -->
+          </ul> -->
 
-        <div class="empty__box">
-          <img
-            class="empty__box-img"
-            src="./img/empty_list.svg"
-            width=""
-            height=""
-            alt="empty user list"
-          />
-          <h3 class="empty__box-title">Нет активных чатов</h3>
-          <p class="empty__box-text">Чтобы начать с кем-нибудь общение воспользуйтесь поиском</p>
+          <div class="empty__box">
+            <img
+              class="empty__box-img"
+              src="./img/empty_search.svg"
+              width=""
+              height=""
+              alt="empty search"
+            />
+            <h3 class="empty__box-title">Ничего не найдено</h3>
+            <p class="empty__box-text">
+              Возможно вы ошиблись в написании, попробуйте проверить и повторить
+            </p>
+          </div>
         </div>
       </section>
       <!-- sidebar end -->

@@ -2,6 +2,7 @@
 $font: "Inter";
 $main: #646e82;
 $bg: linear-gradient(158.53deg, #eef0f5 14.11%, #e2e4ea 85.89%);
+$bg2: linear-gradient(359.84deg, #e2e4ea 6.56%, #eaecf1 97.86%);
 
 // ---- Global-Tags ----
 html {
@@ -24,7 +25,7 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: $main;
-  background: linear-gradient(158.53deg, #eef0f5 14.11%, #e2e4ea 85.89%);
+  background: $bg;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -69,13 +70,20 @@ a {
   line-height: 19px;
   border-radius: 5px;
   background: $main;
-  padding: 11px 36px;
+  padding: 12px 36px;
   color: #fff;
+  &:hover {
+    background: rgba($main, 0.8);
+  }
 }
 .input {
   position: relative;
   width: 100%;
   border-radius: 5px;
+  label {
+    font-size: 12px;
+    line-height: 15px;
+  }
   input {
     width: 100%;
     padding: 11px 13px;
@@ -83,6 +91,7 @@ a {
     line-height: 19px;
     color: $main;
     padding-right: 35px;
+    border-radius: 5px;
   }
   .close {
     transition: 0.1s;
@@ -95,6 +104,28 @@ a {
     width: 13px;
     height: 13px;
   }
+}
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  transition: 0.2s;
+  transform: translateX(-100%);
+  &.active {
+    transition: 0.4s;
+    transform: translateX(0%);
+  }
+}
+.back {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  fill: $main;
+  width: 18px;
+  height: 11px;
 }
 
 // ScrollBar
