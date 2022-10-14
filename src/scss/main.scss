@@ -126,7 +126,7 @@
   height: 100%;
 }
 .bg {
-  background-image: url("../img/bg.png");
+  background-image: url('../img/bg.png');
   background-repeat: repeat;
   background-position: center;
   position: absolute;
@@ -240,8 +240,7 @@
       color: $main;
       font-family: $font;
       border: 1px solid transparent;
-      background: linear-gradient(158.53deg, #eef0f5 14.11%, #e2e4ea 85.89%)
-          padding-box,
+      background: linear-gradient(158.53deg, #eef0f5 14.11%, #e2e4ea 85.89%) padding-box,
         linear-gradient(135.83deg, #ffffff 22.24%, #bac3cf 85.59%) border-box;
     }
     .submit {
@@ -297,7 +296,7 @@
     .message {
       position: relative;
       &::after {
-        content: url("../img/message-before.svg");
+        content: url('../img/message-before.svg');
         position: absolute;
         bottom: -13px;
         left: 0px;
@@ -307,12 +306,12 @@
       }
     }
   }
-  &.his {
+  &.my {
     .message__wrapper:last-child {
       .message {
         position: relative;
         &::after {
-          content: url("../img/message-before2.svg");
+          content: url('../img/message-before2.svg');
           bottom: -13px;
           left: auto;
           right: 0px;
@@ -334,19 +333,32 @@
   display: inline-block;
   margin-bottom: 10px;
   border: 1px solid transparent;
-  background: linear-gradient(158.53deg, #eef0f5 14.11%, #e2e4ea 85.89%)
-      padding-box,
+  background: linear-gradient(158.53deg, #eef0f5 14.11%, #e2e4ea 85.89%) padding-box,
     linear-gradient(175.83deg, #ffffff 22.24%, #bac3cf 85.59%) border-box;
   &__text {
     font-size: 16px;
     line-height: 22px;
   }
-  &__date {
-    font-size: 10px;
-    line-height: 12px;
+  &__info {
     position: absolute;
     right: 5px;
     bottom: 5px;
+    display: flex;
+    align-items: center;
+    svg {
+      fill: rgba($main, 0.6);
+      margin-left: 8px;
+    }
+    .check {
+      width: 10px;
+    }
+    .doublecheck {
+      width: 15px;
+    }
+  }
+  &__date {
+    font-size: 10px;
+    line-height: 12px;
   }
   &__img {
     max-width: 100%;
@@ -355,7 +367,7 @@
   }
   &.img {
     padding: 5px;
-    .message__date {
+    .message__info {
       background-color: #e2e4ea;
       padding: 5px 10px;
       right: 2px;
@@ -365,13 +377,60 @@
     }
   }
 }
-// --------- messages.his ----------
-.messages.his {
+// --------- messages.my ----------
+.messages.my {
   .message__wrapper {
     text-align: right;
   }
   .message {
     text-align: left;
+  }
+  .message__info {
+    right: 7px;
+    bottom: 3px;
+    .message__date {
+      padding-top: 2px;
+    }
+  }
+  .message.img {
+    .message__info {
+      padding: 2px 10px;
+      right: 0px;
+      bottom: 2px;
+    }
+  }
+}
+.message.loading {
+  width: 100px;
+  max-width: none;
+  min-width: auto;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  span {
+    opacity: 0.50;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $main;
+    animation: loading-message 1.2s infinite;
+    @keyframes loading-message {
+      50% {
+        transform: scale(0);
+      }
+    }
+    &:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
   }
 }
 
@@ -419,7 +478,7 @@
     border-radius: 50%;
     cursor: pointer;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 100%;
@@ -644,8 +703,7 @@
   }
   .settings__delete {
     background: rgb(124, 39, 39);
-    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.53),
-      13px 14px 12px -6px rgba(192, 140, 140, 0.57);
+    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.53), 13px 14px 12px -6px rgba(192, 140, 140, 0.57);
     margin-top: 70px;
     &:hover {
       background: rgba(124, 39, 39, 0.85);
