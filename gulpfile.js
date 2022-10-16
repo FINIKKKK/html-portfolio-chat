@@ -91,6 +91,7 @@ const server = () => {
         server: {
             baseDir: `${path.build.html}`
         },
+        tunnel: true,
         notify: false,
         port: 3000,
         open: false,

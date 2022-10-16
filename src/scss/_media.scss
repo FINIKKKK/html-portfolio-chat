@@ -1,91 +1,127 @@
 //Max-Width: 1279px ================================
 @media (max-width: 1279px) {
-
 }
 
 //Max-Width: 1200px ================================
 @media (max-width: 1200px) {
-
+  .users__list {
+    padding: 25px 15px 0;
+  }
 }
 
 //Max-Width: 1150px ================================
 @media (max-width: 1150px) {
-
 }
 
 //Max-Width: 1100px ================================
 @media (max-width: 1100px) {
-
 }
 
 //Max-Width: 1023px ================================
 @media (max-width: 1023px) {
+  .users__list-item {
+    padding: 12px 10px;
+    .users__item-date {
+      top: 5px;
+      right: 9px;
+      font-size: 9px;
+    }
+  }
+  .user-name {
+    width: 80%;
+  }
+}
 
+//Max-Width: 950px ================================
+@media (max-width: 950px) {
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .users__list-item {
+    padding: 17px 10px;
+    .users__item-avatar {
+      margin-right: 13px;
+      pointer-events: none;
+    }
+  }
+  .message__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .user-name {
+    font-size: 11px;
+  }
+  .user-text {
+    font-size: 10px;
+  }
 }
 
 //Max-Width: 900px ================================
 @media (max-width: 900px) {
-
 }
 
 //Max-Width: 850px ================================
 @media (max-width: 850px) {
-
 }
 
 //Планшет #########################################
 //Max-Width: 800px ================================
 @media (max-width: 800px) {
-
 }
 
 //Max-Width: 750px ================================
 @media (max-width: 750px) {
-
+  html {
+    // overflow-x: visible;
+  }
+  body {
+    overflow-x: visible;
+  }
+  .main {
+    // overflow: auto;
+  }
+  .settings--right {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
 }
 
 //Max-Width: 700px ================================
 @media (max-width: 700px) {
-
 }
 
 //Телефон #########################################
 //Max-Width: 641px ================================
 @media (max-width: 641px) {
-
 }
 
 //Max-Width: 600px ================================
 @media (max-width: 600px) {
-
 }
 
 //Max-Width: 550px ================================
 @media (max-width: 550px) {
-
 }
 
 //Max-Width: 500px ================================
 @media (max-width: 500px) {
-
 }
 
 //Max-Width: 450px ================================
 @media (max-width: 450px) {
-
 }
 
 //Max-Width: 400px ================================
 @media (max-width: 400px) {
-
 }
 
 //Max-Width: 359px ================================
 @media (max-width: 359px) {
-    
 }
 
 //Max-Width: 340px ================================
 @media (max-width: 340px) {
-  
 }

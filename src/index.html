@@ -5,9 +5,9 @@
 <body>
   <div class="bg"></div>
 
-  <main class="main">
+  <main class="main shadow">
     <!-- sidebar
-      ======================================================= -->
+    ======================================================= -->
     <section class="sidebar shadow">
       <div class="sidebar__personal shadow curtain">
         <svg class="back control" width="20" height="20">
@@ -80,7 +80,7 @@
       </div>
 
       <div class="sidebar__inner">
-        <div class="sidebar__box">
+        <div class="sidebar__box shadow">
           <div class="sidebar__header">
             <img class="users__item-avatar avatar shadow sh-hover" src="./img/avatar.svg" alt="avatar" />
             <div class="sidebar__header-controls">
@@ -106,8 +106,8 @@
           <li class="users__list-item shadow sh-hover">
             <img class="users__item-avatar avatar shadow" src="./img/avatar.svg" alt="avatar" />
             <div class="user__info">
-              <h6 class="users__item-name user-name">Дмитрий</h6>
-              <p class="users__item-message user-text">Привет мир</p>
+              <h6 class="users__item-name user-name">Дмитрий Дмитрий Дмитрий</h6>
+              <p class="users__item-message user-text">Привет мир Привет мир Привет мир</p>
             </div>
             <div class="users__item-date">Вчера</div>
           </li>
@@ -189,7 +189,7 @@
     <!-- sidebar end -->
 
     <!-- chat
-      ======================================================= -->
+    ======================================================= -->
     <section class="chat">
       <div class="chat__header shadow">
         <div class="chat__user">
@@ -214,213 +214,215 @@
         </div>
       </div>
 
-      <div class="chat__messages">
-        <div class="messages my">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">
-                если что есть много вариантов на пиратке, особенно выживалок
-              </p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="check" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#check" />
-                </svg>
+      <div class="chat__messages-wrapper">
+        <div class="chat__messages">
+          <div class="messages my">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">
+                  если что есть много вариантов на пиратке, особенно выживалок
+                </p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="check" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#check" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="messages">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
+          <div class="messages">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Как дела?</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">
+                  если что есть много вариантов на пиратке, особенно выживалок
+                </p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Как дела?</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-              </div>
-            </div>
-          </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">
-                если что есть много вариантов на пиратке, особенно выживалок
-              </p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="messages my">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">
-                если что есть много вариантов на пиратке, особенно выживалок
-              </p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
+          <div class="messages my">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">
+                  если что есть много вариантов на пиратке, особенно выживалок
+                </p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="messages">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
+          <div class="messages">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="messages__date">Сегодня</div>
+          <div class="messages__date">Сегодня</div>
 
-        <div class="messages my">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">
-                если что есть много вариантов на пиратке, особенно выживалок
-              </p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
+          <div class="messages my">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">
+                  если что есть много вариантов на пиратке, особенно выживалок
+                </p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="messages">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
+          <div class="messages">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow img">
+                <img src="./img/test.jpg" alt="image" class="message__img" />
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="message__wrapper">
-            <div class="message shadow img">
-              <img src="./img/test.jpg" alt="image" class="message__img" />
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="messages my">
-          <div class="message__wrapper">
-            <div class="message shadow">
-              <p class="message__text">Привет</p>
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="doublecheck" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#doublecheck" />
-                </svg>
+          <div class="messages my">
+            <div class="message__wrapper">
+              <div class="message shadow">
+                <p class="message__text">Привет</p>
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="doublecheck" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#doublecheck" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="message__wrapper">
+              <div class="message shadow img">
+                <img src="./img/test.jpg" alt="image" class="message__img" />
+                <div class="message__info">
+                  <div class="message__date">20:00</div>
+                  <svg class="check" width="20" height="20">
+                    <use xlink:href="./img/icons/icons.svg#check" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <div class="message__wrapper">
-            <div class="message shadow img">
-              <img src="./img/test.jpg" alt="image" class="message__img" />
-              <div class="message__info">
-                <div class="message__date">20:00</div>
-                <svg class="check" width="20" height="20">
-                  <use xlink:href="./img/icons/icons.svg#check" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="messages">
-          <div class="message__wrapper">
-            <div class="message shadow loading">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="messages">
+            <div class="message__wrapper">
+              <div class="message shadow loading">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
