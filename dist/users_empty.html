@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Dmitriy Bozhko / DIGIKRASH" />
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="./favicon.png" type="image/png"> -->
+    <link rel="icon" href="./favicon.png" type="image/png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style-min.css">
+
+</head>
+
+  <body>
+    <div class="bg"></div>
+
+    <main class="main">
+      <!-- sidebar
+      ======================================================= -->
+      <section class="sidebar shadow">
+        <div class="sidebar__box">
+          <div class="sidebar__header">
+            <img
+              class="users__item-avatar avatar shadow sh-hover"
+              src="./img/avatar.svg"
+              alt="avatar"
+            />
+            <div class="sidebar__header-controls">
+              <svg class="settings" width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#settings" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="sidebar__search">
+            <input class="shadow sh-hover" type="text" placeholder="Поиск пользователей..." />
+            <svg class="search" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#search" />
+            </svg>
+            <svg class="close" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#close" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- <div class="users__content">
+          <ul class="users__list">
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+              </div>
+            </li>
+            <li class="users__list-item shadow sh-hover">
+              <img
+                class="users__item-avatar avatar shadow"
+                src="./img/avatar.svg"
+                alt="avatar"
+              />
+              <div class="user__info">
+                <h6 class="users__item-name user-name">Дмитрий</h6>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+
+        <div class="empty__box">
+          <img
+            class="empty__box-img"
+            src="./img/empty_list.svg"
+            width=""
+            height=""
+            alt="empty user list"
+          />
+          <h3 class="empty__box-title">Нет активных чатов</h3>
+          <p class="empty__box-text">Чтобы начать с кем-нибудь общение воспользуйтесь поиском</p>
+        </div>
+      </section>
+      <!-- sidebar end -->
+
+      <!-- chat
+      ======================================================= -->
+      <section class="chat">
+        <div class="chat__header shadow disabled">
+          <div class="chat__user">
+            <img
+              src="./img/avatar.svg"
+              alt="avatar"
+              class="chat__user-avatar avatar shadow"
+            />
+            <div class="chat__user-info">
+              <h6 class="chat__user-name user-name">Дмитрий</h6>
+              <div class="chat__user-date">
+                Последний раз был в сети в 20:00
+              </div>
+            </div>
+          </div>
+          <div class="chat__controlls">
+            <div class="search__message">
+              <input type="text" />
+              <svg class="search control" width="20" height="20">
+                <use xlink:href="./img/icons/icons.svg#search" />
+              </svg>
+            </div>
+            <svg class="controlls control" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#controlls" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="chat__messages"></div>
+
+        <div class="chat__compose disabled">
+          <svg class="smiles control" width="20" height="20">
+            <use xlink:href="./img/icons/icons.svg#smiles" />
+          </svg>
+          <div class="compose__input">
+            <input
+              class="shadow sh-hover"
+              type="text"
+              placeholder="Сообщение..."
+            />
+            <svg class="submit" width="20" height="20">
+              <use xlink:href="./img/icons/icons.svg#submit" />
+            </svg>
+          </div>
+          <svg
+            class="attach control"
+            title="Прикрепить картинку"
+            width="20"
+            height="20"
+          >
+            <use xlink:href="./img/icons/icons.svg#attach" />
+          </svg>
+        </div>
+      </section>
+      <!-- chat end -->
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/script-min.js"></script>
+  </body>
+</html>
